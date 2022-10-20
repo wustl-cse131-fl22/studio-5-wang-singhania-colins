@@ -120,6 +120,14 @@ public static int[] filledArray(int length, int value) {
 
 // TODO: Create an arrayMean method which accepts an int array of values parameter.
 // TODO: Create a JavaDoc comment for the arrayMean method.
+public static double arrayMean(int[] values) {
 
+	
+	int sum = arraySum(values); 
+	double mean = sum / (double)(values.length) ; 
+	
 
+return mean;
+
+}
 }
