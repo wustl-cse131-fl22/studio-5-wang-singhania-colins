@@ -17,7 +17,7 @@ public class Methods {
 		double distance = 0;
 		// FIXME: Hint use Math methods (e.g. Math.sqrt) to compute the distance
 		distance = Math.sqrt(Math.pow(x2 - x1, 2.0) + Math.pow(y2 - y1, 2.0));
-		
+
 		return distance;
 	}
 
@@ -66,41 +66,55 @@ public class Methods {
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
 		// TODO: Finish this method
-		
-		return result;
-	}
+		for (int i = 0; i < source.length(); i++) {
+			if (source.charAt(i) == target) {
+				// if your source is = to target at the index, replace it with the replacement 
+				// if it's not = to target, keep the original character
 
-	/**
-	 * Compute the sum of elements in an array
-	 * 
-	 * @param values an array of integers
-	 * @return the sum of the elements in values
-	 */
-	public static int arraySum(int[] values) {
-		int sum = 0;
-		// FIXME: Compute the sum of the values in an array
-		
-		return sum;
-	}
+				result += replacement;
+			}
+			else {
+				result += source.charAt(i);
+			}
 
-	/**
-	 * Return an array of a given size filled with the provided value
-	 * 
-	 * @param length the length of the returned array
-	 * @param value  the value to fill the array with
-	 * @return and array of size that's filled with value
-	 */
-	public static int[] filledArray(int length, int value) {
-		int[] values = null; // FIXME: Create an array of the appropriate size
-		// TODO: Finish this method
+		}
 
-		
+	return result;
 
-		return values;
-	}
+}
 
-	// TODO: Create an arrayMean method which accepts an int array of values parameter.
-	// TODO: Create a JavaDoc comment for the arrayMean method.
 
-	
+/**
+ * Compute the sum of elements in an array
+ * 
+ * @param values an array of integers
+ * @return the sum of the elements in values
+ */
+public static int arraySum(int[] values) {
+	int sum = 0;
+	// FIXME: Compute the sum of the values in an array
+
+	return sum;
+}
+
+/**
+ * Return an array of a given size filled with the provided value
+ * 
+ * @param length the length of the returned array
+ * @param value  the value to fill the array with
+ * @return and array of size that's filled with value
+ */
+public static int[] filledArray(int length, int value) {
+	int[] values = null; // FIXME: Create an array of the appropriate size
+	// TODO: Finish this method
+
+
+
+	return values;
+}
+
+// TODO: Create an arrayMean method which accepts an int array of values parameter.
+// TODO: Create a JavaDoc comment for the arrayMean method.
+
+
 }
